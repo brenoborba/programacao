@@ -9,6 +9,9 @@ public class ex009 {
         int n2 = scan.nextInt();
         int n3 = scan.nextInt();
 
+        int menor = n1;
+        int maior = n1;
+
         int aux = n1;
 
         if (n1 == 0)
@@ -19,10 +22,5 @@ public class ex009 {
             System.out.print("O tereceiro valor é igual à 0!\n");
         else
             System.out.print("Nenhum dos valores inseridos é igual à 0!");
-
-        System.out.print("");
-
-
-
     }
 }
