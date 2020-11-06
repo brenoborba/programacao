@@ -24,14 +24,13 @@ public class ex011_a {
 
         switch(escolha_operacao) {
             case 'a':
-            case 'A': System.out.print("A adição de " + escolha1 + " " + escolha2 + " é igual à: " + adição); break;
+            case 'A': System.out.printf("A adição de %d e %d é igual à: %d", escolha1, escolha2, adição); break;
             case 's':
-            case 'S': System.out.print("A subtração de " + escolha1 + " " + escolha2 + " é igual à: " + subtração); break;
+            case 'S': System.out.printf("A subtração de %d e %d é igual à: %d", escolha1, escolha2, subtração); break;
             case 'd':
-            case 'D': System.out.print("A divisão de " + escolha1 + " " + escolha2 + " é igual à: " + divisao); break;
+            case 'D': System.out.printf("A divisão de %d e %d é igual à: %d", escolha1, escolha2, divisao); break;
             case 'm':
-            case 'M': System.out.print("A multiplicação de " + escolha1 + " " + escolha2 + " é igual à: " + multiplicacao); break;
-            default: System.out.println("Opção inválida, tente novamente!");
+            case 'M': System.out.printf("A multiplicação de %d e %d é igual à: %d", escolha1, escolha2, multiplicacao); break;
 
         }
 

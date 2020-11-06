@@ -10,12 +10,12 @@ public class ex005 {
         System.out.print("Insira mais um número inteiro: ");
         int n2 = scan.nextInt();
 
-        int n12 = ++n1;
+        int aux = n1;
+        n1 = n2;
+        n2 = aux;
 
-        int n22 = ++n2;
-
-        System.out.println("Valor da primeira varíavel pós alteração: " + n12);
-        System.out.println("Valor da segunda variável pós alteração: " + n22);
+        System.out.printf("Valor da primeira varíavel pós alteração: %d\n", n1 );
+        System.out.printf("Valor da segunda variável pós alteração: %d\n", n2);
 
     }
 }

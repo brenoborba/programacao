@@ -13,5 +13,6 @@ public class ex003 {
         System.out.println("Valor em segundos: " + segundos);
         System.out.println("Valor em minutos: " + minutos);
         System.out.println("Valor em horas: " + horas);
+        System.out.printf("%d:%d:%d", horas % minutos, minutos / 60, segundos % segundos);
     }
 }

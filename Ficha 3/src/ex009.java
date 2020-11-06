@@ -10,7 +10,7 @@ public class ex009 {
         e) p %= 2 * 2   p = 1  -> primeiro faz a multiplicação de 2*2 e depois retorna o resto da divisão (5%4)
         f) p = ++k * 5  p = 20  k = 4
         g) k = p&3      p = 5   k = 1
-        h) k <<= k>> 1  k = ???
+        h) k <<= k>> 1  k = 6
         i) ???
         j) p = p / ĸ*10 p = 0    k = 3 ???
 
