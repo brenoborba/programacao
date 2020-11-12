@@ -11,13 +11,13 @@ public class ex006 {
         System.out.print("Insira as notas dos exames intercalares: ");
         int exame_int_1 = scan.nextInt();
         int exame_int_2 = scan.nextInt();
-        int exmae_int_3 = scan.nextInt();
+        int exame_int_3 = scan.nextInt();
 
         System.out.print("Insira a nota do exame final: ");
         int exame_final = scan.nextInt();
 
         //Calculadoras
-        float media_intercalar = (exame_int_1 + exame_int_2 + exmae_int_3)/3;
+        float media_intercalar = (exame_int_1 + exame_int_2 + exame_int_3)/3;
         float classificacao = ((exame_final * 40)/100 + (media_intercalar * 60)/100);
         float classificacao_60 = exame_final * 60/100;
 

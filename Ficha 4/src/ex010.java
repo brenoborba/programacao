@@ -10,8 +10,8 @@ public class ex010 {
        char ch_mai = Character.toUpperCase(ch_default);
        char ch_min  = Character.toLowerCase(ch_default);
 
-        System.out.println("O caracter digitado em sua forma maiúscula: " + ch_mai);
-        System.out.println("O carácter inserido em sua forma minúscula: " + ch_min  );
+        System.out.printf("O carácter inserido em sua forma maiúscula: %s\n", ch_mai);
+        System.out.printf("O carácter inserido em sua forma minúscula: %s\n", ch_min  );
 
     }
 }
