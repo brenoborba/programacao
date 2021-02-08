@@ -1,46 +1,56 @@
 import java.util.Scanner;
 
 public class ex006 {
-    public final static int MAXVALORES = 10;
-    public static void main(String[] args){
-        int inteiros[] = new int[20];
-        int n = 1;
-    }
-    public static int lerInteiro(int[] v){
+    static void lerValor(int[] x){
         Scanner scan = new Scanner(System.in);
-        System.out.printf("Insira um número inteiro: ");
-        int n = 0;
-        do{
 
-            v[n] = scan.nextInt();
-            n++;
+        for(int i = 0; i < x.length; i++) {
+            System.out.printf("Insira um numero: ");
+            x[i] = scan.nextInt();
 
-        }while (v[n -1] != 0 && n < MAXVALORES);
-        if (v[n - 1] == 0){
-            n--;
+            if(x[i] == 0 || i == 21)
+                break;
         }
-        return n;
     }
-    public static boolean crescente(int[]v, int n){
-        for(int i = 1; i < n; i++){
-            if(v[i] <= v[i-1]){
+    static boolean crescente(int[] x){
+        int n = 1;
+        for(int i = 0; i < x.length; i++)
+            if(!(x[i] < x[i + 1] && x[i] == x[i + 1] - n))
                 return false;
-            }
-        }
+            else
+                return true;
+
         return true;
     }
-    public static boolean alternado(int[]v, int n){
-        for(int i = 1; i < n; i++){
-            if(v[i] * v[i-1] >= 0){
+    static boolean alternada(int[] x){
+        for(int i = 0; i < x.length; i++)
+            if(x[i] > 0 && x[i + 1] < 0)
+                return true;
+            else
                 return false;
+
+        return false;
+    }
+    static boolean semrepeticao(int[] x){
+        int n;
+        for(int i = 0; i < x.length - 1; i++)
+            if(x[i] != x[i + 1]){
+                return true;
             }
-        }
-        return true;
+        else
+            return false;
+        return false;
+
     }
-    /*public boolean semRepeticoes(int [] v, int n){
-        int i, j;
-        boolean semR = true;
-        for(i = 0; i < n)*/
+
+
+    public static void main(String[] args){
+        int[] x = new int[5];
+        lerValor(x);
+        System.out.printf("%b", semrepeticao(x));
+
     }
+
+}
 
 
